@@ -1,0 +1,39 @@
+{
+    "name": "aoeng/laravel-meituan",
+    "description": "美团联盟接口",
+    "keywords": [
+        "meituan",
+        "laravel"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Dang",
+            "email": "yofengge@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.4",
+        "laravel/framework": ">=8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Aoeng\\Laravel\\Meituan\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Aoeng\\Laravel\\Meituan\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Aoeng\\Laravel\\Meituan\\MeituanServiceProvider"
+            ],
+            "aliases": {
+                "Meituan": "MeituanPub"
+            }
+        }
+    }
+}

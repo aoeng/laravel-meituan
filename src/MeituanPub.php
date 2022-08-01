@@ -26,7 +26,7 @@ class MeituanPub
 
     public function activities($timeLimit = true)
     {
-        return $this->request('api/board/activities', ['utmSource' => $this->utmSource, 'timeLimit' => $timeLimit], 'POST')->json();
+        return $this->request('api/board/activities', ['utmSource' => $this->utmSource, 'timeLimit' => $timeLimit], 'POST');
     }
 
     public function link($activity, $utmMedium = null, $promotionId = null, $userLevel = null, $demandQrInfo = false)

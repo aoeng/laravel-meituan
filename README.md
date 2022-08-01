@@ -11,8 +11,13 @@ php artisan vendor:publish --tag=meituan
 
 ### Used
 ```php
-// 功能太拉跨了，就这样吧
-\Aoeng\Laravel\Meituan\Facades\MeituanPub::request();
+use \Aoeng\Laravel\Meituan\Facades\MeituanPub;
+
+// 这个分销联盟做的太拉跨了
+MeituanPub::activities();
+MeituanPub::link();
+MeituanPub::cpaOrders();
+MeituanPub::request();
 
 ```
 
